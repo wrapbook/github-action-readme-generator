@@ -100,7 +100,7 @@ or use none, and instead use a `.ghadocs.json` file.
 <!-- start usage -->
 
 ```yaml
-- uses: bitflight-devops/github-action-readme-generator@main
+- uses: wrapbook/github-action-readme-generator@main
   with:
     # The absolute or relative path to the `action.yml` file to read in from.
     # Default: action.yml
@@ -165,7 +165,15 @@ or use none, and instead use a `.ghadocs.json` file.
 | **<code>title_prefix</code>**              | Add a prefix to the README title                                                                                                               | <code>GitHub Action: </code> | **false**    |
 
 <!-- end inputs -->
+
+## Outputs
+
 <!-- start outputs -->
+
+| **Output**                 | **Description**                                                             |
+| -------------------------- | --------------------------------------------------------------------------- |
+| **<code>test_test</code>** | The test_test output is used to test the output component of the generator. |
+
 <!-- end outputs -->
 <!-- start [.github/ghadocs/examples/] -->
 <!-- end [.github/ghadocs/examples/] -->
