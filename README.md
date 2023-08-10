@@ -29,6 +29,16 @@ This tool uses markdown comments as delimiting tokens within the `README.md` fil
 | --versioning:branch, --branch      | If versioning is disabled show this branch instead                                          | [default: ""]    |
 | --title_prefix, --prefix           | Add a prefix to the README title                                                            | [default: ""]    |
 
+### Build and Run Locally
+
+```sh
+yarn install
+npm install
+npm run build
+npm pack
+npx github-action-readme-generator-<version>.tgz
+```
+
 ### Stand Alone Usage - if you have a Docker Action
 
 ```sh
