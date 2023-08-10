@@ -57,6 +57,10 @@ inputs:
       Add a prefix to the README title
     required: false
     default: 'GitHub Action: '
+outputs:
+  test:
+    description: >
+      The test output is used to test the output component of the generator.
 
 runs:
   using: 'node16'

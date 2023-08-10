@@ -29,6 +29,15 @@ This tool uses markdown comments as delimiting tokens within the `README.md` fil
 | --versioning:branch, --branch      | If versioning is disabled show this branch instead                                          | [default: ""]    |
 | --title_prefix, --prefix           | Add a prefix to the README title                                                            | [default: ""]    |
 
+### Build and Run Locally
+
+```sh
+yarn install
+npm install --no-package-lock --prefer-offline --no-audit --no-progress --no-bin-links --ignore-scripts --ignore-engines --ignore-platform
+npm pack
+npx github-action-readme-generator-<version>.tgz
+```
+
 ### Stand Alone Usage - if you have a Docker Action
 
 ```sh
@@ -100,7 +109,7 @@ or use none, and instead use a `.ghadocs.json` file.
 <!-- start usage -->
 
 ```yaml
-- uses: bitflight-devops/github-action-readme-generator@main
+- uses: wrapbook/github-action-readme-generator@main
   with:
     # The absolute or relative path to the `action.yml` file to read in from.
     # Default: action.yml
@@ -165,7 +174,15 @@ or use none, and instead use a `.ghadocs.json` file.
 | **<code>title_prefix</code>**              | Add a prefix to the README title                                                                                                               | <code>GitHub Action: </code> | **false**    |
 
 <!-- end inputs -->
+
+## Outputs
+
 <!-- start outputs -->
+
+| **Output**            | **Description**                                                        |
+| --------------------- | ---------------------------------------------------------------------- |
+| **<code>test</code>** | The test output is used to test the output component of the generator. |
+
 <!-- end outputs -->
 <!-- start [.github/ghadocs/examples/] -->
 <!-- end [.github/ghadocs/examples/] -->

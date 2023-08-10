@@ -8,9 +8,7 @@ export default function updateOutputs(token: string, inputs: Inputs): void {
 
   // Build the new README
   const content: string[] = [];
-  const markdownArray: string[][] = [
-    ['**Output**', '**Description**', '**Default**', '**Required**'],
-  ];
+  const markdownArray: string[][] = [['Output', 'Description']];
   const vars = inputs.action.outputs;
   const tI = vars ? Object.keys(vars).length : 0;
   if (tI > 0) {
@@ -19,8 +17,8 @@ export default function updateOutputs(token: string, inputs: Inputs): void {
       // eslint-disable-next-line security/detect-object-injection
       const values = vars[key];
       const row: string[] = [
-        `\`${key.trim()}\``,
-        values?.description?.trim().replace('\n', ' ') ?? '',
+        `**\`${key.trim()}\`**`,
+        values?.description?.trim().replace('\n', '<br />') ?? '',
       ];
       log.debug(JSON.stringify(row));
       markdownArray.push(row);
