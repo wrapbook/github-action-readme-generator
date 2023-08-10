@@ -104,6 +104,3 @@ typings/
 
 # TernJS port file
 .tern-port
-
-# Etc
-**/.DS_Store*
