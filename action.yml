@@ -58,9 +58,9 @@ inputs:
     required: false
     default: 'GitHub Action: '
 outputs:
-  test_test:
+  test:
     description: >
-      The test_test output is used to test the output component of the generator.
+      The test output is used to test the output component of the generator.
 
 runs:
   using: 'node16'

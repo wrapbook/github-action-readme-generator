@@ -180,9 +180,9 @@ or use none, and instead use a `.ghadocs.json` file.
 
 <!-- start outputs -->
 
-| **Output**                 | **Description**                                                             |
-| -------------------------- | --------------------------------------------------------------------------- |
-| **<code>test_test</code>** | The test_test output is used to test the output component of the generator. |
+| **Output**            | **Description**                                                        |
+| --------------------- | ---------------------------------------------------------------------- |
+| **<code>test</code>** | The test output is used to test the output component of the generator. |
 
 <!-- end outputs -->
 <!-- start [.github/ghadocs/examples/] -->
