@@ -61,6 +61,7 @@ outputs:
   test:
     description: >
       The test output is used to test the output component of the generator.
+    value: ${{ steps.test_step.outputs.test }}
 
 runs:
   using: 'node16'

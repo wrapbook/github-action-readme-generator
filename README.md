@@ -179,9 +179,9 @@ or use none, and instead use a `.ghadocs.json` file.
 
 <!-- start outputs -->
 
-| **Output**            | **Description**                                                        |
-| --------------------- | ---------------------------------------------------------------------- |
-| **<code>test</code>** | The test output is used to test the output component of the generator. |
+| **Output**            | **Description**                                                        | **Value**                                        |
+| --------------------- | ---------------------------------------------------------------------- | ------------------------------------------------ |
+| **<code>test</code>** | The test output is used to test the output component of the generator. | <code>${{ steps.test_step.outputs.test }}</code> |
 
 <!-- end outputs -->
 <!-- start [.github/ghadocs/examples/] -->
