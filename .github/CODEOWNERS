@@ -1,0 +1,6 @@
+# This file goes from least specific to most specific.
+# The furthest match down is the one that is used.
+# File size limit: 3 MB
+
+# Default Owners
+*                                                          @wrapbook/platform
