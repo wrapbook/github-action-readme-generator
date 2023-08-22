@@ -38,6 +38,27 @@ npm pack
 npx github-action-readme-generator-<version>.tgz
 ```
 
+### Use as a pre-commit hook in other local repositories
+
+First, copy the tgz file to the desired repository
+
+```sh
+cp -av github-action-readme-generator-<version>.tgz <root-of-other-repo>
+```
+
+Then, add the following to the `.pre-commit-config.yaml` file in that repository
+
+```yaml
+- repo: local
+  hooks:
+    - id: gha-readme-generator
+      name: gha-readme-generator
+      entry: bash -c "npx github-action-readme-generator-<version>.tgz"
+      language: system
+      pass_filenames: false
+      files: "action.yml"
+```
+
 ### Stand Alone Usage - if you have a Docker Action
 
 ```sh
