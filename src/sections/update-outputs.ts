@@ -8,7 +8,7 @@ export default function updateOutputs(token: string, inputs: Inputs): void {
 
   // Build the new README
   const content: string[] = [];
-  const markdownArray: string[][] = [['Output', 'Description']];
+  const markdownArray: string[][] = [['Output', 'Description', 'Value']];
   const vars = inputs.action.outputs;
   const tI = vars ? Object.keys(vars).length : 0;
   if (tI > 0) {
@@ -19,6 +19,7 @@ export default function updateOutputs(token: string, inputs: Inputs): void {
       const row: string[] = [
         `**\`${key.trim()}\`**`,
         values?.description?.trim().replace('\n', '<br />') ?? '',
+        values?.value ? `\`${values.value}\`` : '',
       ];
       log.debug(JSON.stringify(row));
       markdownArray.push(row);

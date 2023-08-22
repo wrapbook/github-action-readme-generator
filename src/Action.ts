@@ -11,6 +11,7 @@ export interface InputType {
 }
 export interface OutputType {
   description?: string;
+  value?: string;
 }
 export interface Runs {
   using: string;
